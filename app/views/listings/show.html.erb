@@ -24,8 +24,8 @@
 </p>
 
 <p>
-  <strong>Price $</strong>
-  <%= @listing.price %>
+  <strong>Price </strong>
+  <%= number_to_currency(@listing.price) %>
 </p>
 
 <% if @listing.sold %>
