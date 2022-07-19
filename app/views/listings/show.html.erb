@@ -52,7 +52,7 @@
   <strong>Category:</strong>
   <%= @listing.category_id %>
 </p>
-<!-----------may get an error here later if so remove "current_user &&" bellow.-------------------------------------------->
+
 <% if current_user && current_user.id == @listing.user_id %>
 <%= link_to 'Edit', edit_listing_path(@listing) %> |
 <% end %>
