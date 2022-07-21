@@ -19,7 +19,7 @@
       <tr>
         <td><%= item.listing.title %></td>
         <td><%= item.listing.description %></td>
-        <td><%= item.listing.condition %></td>
+        <td><%= item.listing.condition.split("_").join(" ").capitalize %></td>
         <td><%= number_to_currency(item.listing.price) %></td>
         <td><%= item.buyer.username %></td>
         <td><%= item.listing.category.name %></td>

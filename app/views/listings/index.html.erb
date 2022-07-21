@@ -21,7 +21,7 @@
       <tr>
         <td><%= listing.title %></td>
         <td><%= listing.description %></td>
-        <td><%= listing.condition %></td>
+        <td><%= listing.condition.split("_").join(" ").capitalize%></td>
         <td><%= number_to_currency(listing.price) %></td>
         <td><%= listing.sold %></td>
         <td><%= listing.user_id %></td>
